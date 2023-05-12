@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "date"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "madeAt": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "github": {
+      "type": "string"
+    },
+    "buildWith": {
+      "type": "component",
+      "repeatable": true,
+      "component": "build-with.build-with"
+    },
+    "descriptions": {
+      "displayName": "descriptions",
+      "type": "component",
+      "repeatable": true,
+      "component": "descriptions.descriptions"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "ui/ux",
+        "web",
+        "design",
+        "game"
+      ]
+    },
+    "process": {
+      "displayName": "process",
+      "type": "component",
+      "repeatable": true,
+      "component": "process.process"
+    }
+  }
+}

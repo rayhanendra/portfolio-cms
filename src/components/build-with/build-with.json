@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_build_with_build_withs",
+  "info": {
+    "displayName": "buildWith"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
